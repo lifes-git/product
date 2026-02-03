@@ -3,4 +3,4 @@
 이 프로젝트는 간단한 점심 메뉴 추천 웹사이트입니다. 버튼을 클릭하면 무작위로 메뉴를 추천해줍니다.
 
 ## 배포 URL
-[점심 메뉴 추천 웹사이트](https://lifes-git.github.io/product/)
+[점심 메뉴 추천 웹사이트](https://product-4ac.pages.dev/)
