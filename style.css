@@ -1,3 +1,4 @@
+/* Add styles here */
 body {
   display: flex;
   flex-direction: column;
@@ -27,3 +28,63 @@ h1 {
   font-size: 18px;
   font-weight: bold;
 }
+
+/* Contact Form Styles */
+#contact-form-section {
+  margin-top: 40px;
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#contact-form-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#partnership-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#partnership-form label {
+  text-align: left;
+  font-weight: bold;
+  color: #555;
+}
+
+#partnership-form input[type="text"],
+#partnership-form input[type="email"],
+#partnership-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't increase width */
+}
+
+#partnership-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#partnership-form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#partnership-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
