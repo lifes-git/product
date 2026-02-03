@@ -1,20 +1,59 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>점심 메뉴 추천</title>
+  <title>직장인 점심시간 필수 앱</title>
+  <meta name="description" content="오늘 뭐 먹을지 고민될 때, 점심값 내기 게임이 필요할 때 사용해보세요! 직장인들의 즐거운 점심시간을 위한 웹사이트입니다.">
   <link href='/style.css' rel='stylesheet'>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3773123905293582"
-     crossorigin="anonymous"></script>
 </head>
 <body>
+  <header>
+    <h1>직장인 점심시간 필수 앱!  lunchtime.com</h1>
+    <p>오늘 뭐 먹을지 고민될 때, 점심값 내기 게임이 필요할 때!</p>
+  </header>
 
-  <div class="container">
-    <h1>오늘 뭐 먹지?</h1>
-    <button id="recommend-button">점심메뉴 추천</button>
-    <div id="menu-recommendation"></div>
-  </div>
+  <main>
+    <section id="what-to-eat">
+      <h2>오늘 뭐 먹지? 메뉴 추천</h2>
+      <p>매일 반복되는 점심 메뉴 고민, 이제 그만! 아래 버튼을 눌러 랜덤으로 점심 메뉴를 추천받아보세요.</p>
+      <button id="recommend-button">메뉴 추천</button>
+      <div id="menu-recommendation"></div>
+    </section>
+
+    <section id="lunch-roulette">
+      <h2>점심값 몰빵! 룰렛 게임</h2>
+      <p>흥미진진한 점심값 내기! 아래에 참여자 이름을 추가하고 룰렛을 돌려보세요. <br>오늘 점심은 누가 살 것인가!</p>
+      <div id="roulette-game-container">
+        <div id="participant-adder">
+          <input type="text" id="participant-name" placeholder="이름을 입력하세요">
+          <button id="add-participant-button">추가</button>
+        </div>
+        <ul id="participant-list"></ul>
+        <button id="spin-roulette-button">룰렛 돌리기!</button>
+        <div id="roulette-result"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section id="contact-form-section">
+      <h2>제휴 및 기타 문의</h2>
+      <form action="https://formspree.io/f/mreljker" method="POST" id="partnership-form">
+        <label for="name">이름:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">이메일:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">메시지:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">문의 제출</button>
+      </form>
+    </section>
+    <p>&copy; 2026 lunchtime.com. All Rights Reserved.</p>
+  </footer>
 
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
