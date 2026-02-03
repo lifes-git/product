@@ -1,1 +1,29 @@
-/* Add styles here */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items. center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#recommend-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#menu-recommendation {
+  font-size: 18px;
+  font-weight: bold;
+}
